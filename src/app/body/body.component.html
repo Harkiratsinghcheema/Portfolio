@@ -10,27 +10,136 @@
         <mat-tab-group dynamicHeight>
             <mat-tab label="About Me!">
               <div class=" mat-elevation-z4">
-                <mat-card-content style="font-family:Raleway; font-size: 15px;line-height:40px;">I am aspiring and creative developer and I love doing web development in different frameworks.
+                  <div class="animated" animateOnScroll animationName="fadeInLeft"><img  style="float: left; margin-right:10px; clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);"  src="https://i2.sndcdn.com/avatars-000697093645-q62laz-t500x500.jpg"></div>
+                <mat-card-content class="animated" animateOnScroll animationName="fadeInRight" style="font-family:Raleway; font-size: 15px;line-height:40px;width:80rem;">I am aspiring and creative developer and I love doing web development in different frameworks.
                 I do have different logics to do same problem in programming. A programmer should have courage and patience to do things
                 and I am good in those areas.
                 </mat-card-content>
               </div>
             </mat-tab>
             <mat-tab label="Skills">
-              <div class="example-large-box mat-elevation-z4">
-                Large content
+              <div class=" mat-elevation-z4">
+                <circle-progress
+                [percent]="90"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#78C000'"
+                [innerStrokeColor]="'#C7E596'"
+                [unitsColor]="'white'"
+                [animation]="true"
+                [subtitleColor]="'white'"
+                [titleColor]="'white'"
+                [showTitle]="true"
+                [showSubtitle]="true"
+                [subtitle]="'Front End'"
+                [subtitleFontSize]="'20px'"
+                [animationDuration]="300">front end</circle-progress>
+                <circle-progress
+                [percent]="85"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'red'"
+                [innerStrokeColor]="'#C7E596'"
+                [unitsColor]="'white'"
+                [animation]="true"
+                [subtitleColor]="'white'"
+                [titleColor]="'white'"
+                [showTitle]="true"
+                [showSubtitle]="true"
+                [subtitle]="'Back End'"
+                [subtitleFontSize]="'20px'"
+                [animationDuration]="300">back end</circle-progress>
+                <circle-progress
+                [percent]="70"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'purple'"
+                [innerStrokeColor]="'#C7E596'"
+                [unitsColor]="'white'"
+                [animation]="true"
+                [subtitleColor]="'white'"
+                [titleColor]="'white'"
+                [showTitle]="true"
+                [showSubtitle]="true"
+                [subtitle]="'Problem Solving'"
+                [subtitleFontSize]="'20px'"
+                [animationDuration]="300">problem solving</circle-progress>
+                <circle-progress
+                [percent]="85"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'pink'"
+                [innerStrokeColor]="'#C7E596'"
+                [unitsColor]="'white'"
+                [animation]="true"
+                [subtitleColor]="'white'"
+                [titleColor]="'white'"
+                [showTitle]="true"
+                [showSubtitle]="true"
+                [subtitle]="'Logic'"
+                [subtitleFontSize]="'20px'"
+                [animationDuration]="300">logic</circle-progress>
+                <circle-progress
+                [percent]="80"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'blue'"
+                [innerStrokeColor]="'#C7E596'"
+                [unitsColor]="'white'"
+                [animation]="true"
+                [subtitleColor]="'white'"
+                [titleColor]="'white'"
+                [showTitle]="true"
+                [showSubtitle]="true"
+                [subtitle]="'Creativty'"
+                [subtitleFontSize]="'20px'"
+                [animationDuration]="300">creativty</circle-progress>
               </div>
             </mat-tab>
+            <mat-tab label="Programming Languages">
+                <div class=" mat-elevation-z4">
+                    <mat-tab-group dynamicHeight>
+                       <mat-tab label="Front End">
+                        <mat-nav-list>
+                            <mat-list-item> HTML </mat-list-item>
+                            <mat-list-item> CSS </mat-list-item>
+                            <mat-list-item> Javascript </mat-list-item>
+                            <mat-list-item> Angular </mat-list-item>
+                            <mat-list-item> Bootstrap </mat-list-item>
+                        </mat-nav-list>
+                        </mat-tab>
+                       <mat-tab label="Back End">
+                        <mat-nav-list>
+                            <mat-list-item> Java </mat-list-item>
+                            <mat-list-item> C# </mat-list-item>
+                        </mat-nav-list>
+                       </mat-tab>  
+                       <mat-tab label="Database">
+                        <mat-nav-list>
+                            <mat-list-item> SQL </mat-list-item>
+                            <mat-list-item> MONGODB </mat-list-item>
+                            <mat-list-item> Active Directory - LDAP </mat-list-item>
+                        </mat-nav-list> 
+                       </mat-tab> 
+                    </mat-tab-group>
+                </div>
+              </mat-tab>
           </mat-tab-group>
           
     </div>
     <mat-divider></mat-divider>
-    <h2>Qualifications</h2>
-    <div class="containerzzz">
+    <h2><span style="width:30rem;">Qualifications</span></h2>
+    <mat-divider></mat-divider>
+    <div class="containerzzz animated" animateOnScroll animationName="fadeInLeft">
         <div>
         <div class="heading">Sheridan Institute of Technology and Advanced Learning</div>
-        <h3>Computer Software Technology – Software Development and Networking<span style="float: right;">Graduation Expected December 2021</span></h3>
-        <mat-card-content>I am pursuing Computer System Technology - Software Development and Networking.
+        <h3>Computer Software Technology – Software Development and Networking<span style="float: right;">Graduation Expected - December 2021</span></h3>
+        <mat-card-content style="width:40%;">I am pursuing Computer System Technology - Software Development and Networking.
             It is 3 year advance diploma and I have 3 Co-ops in my course and currently I am pursuing my first Co-op in RBC.</mat-card-content>
             
             <mat-nav-list>
@@ -46,9 +155,20 @@
                </mat-nav-list>
         </div>
             <!--  -->
-    <div class="image">
-        <img class="sheridan" src="https://thepointer.com/photos/headers/sheridan-college-plans-to-boost-brampton-s-energy-efficiency-curb-effects-of-climate-change-the-pointer-aafc2daa.jpg">
+    <div class="image animated" animateOnScroll animationName="fadeInRight">
+        <a href="https://www.sheridancollege.ca/" ><img class="sheridan" src="https://thepointer.com/photos/headers/sheridan-college-plans-to-boost-brampton-s-energy-efficiency-curb-effects-of-climate-change-the-pointer-aafc2daa.jpg"></a>
     </div>
 
+    </div>
+    <mat-divider></mat-divider>
+    <h2><span style="width: 25rem;">Work Experience</span></h2>
+    <mat-divider></mat-divider>
+    <div class="experience animated" animateOnScroll animationName="fadeInRight">
+        <div>
+            <img style="width:30rem;height:25rem;" src="https://www.theglobeandmail.com/resizer/-91A2ODMm5rqdTdxZv2nmWJhS7M=/620x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/QAGNBQAZOZERXAUQSB2GIB7JAQ">
+        </div>
+        <div>
+            Some Content here!
+        </div>
     </div>
 </mat-card>

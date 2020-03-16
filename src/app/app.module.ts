@@ -56,9 +56,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 @NgModule({
   declarations: [
     AppComponent,
@@ -121,7 +122,24 @@ import {MatTreeModule} from '@angular/material/tree';
     MatTooltipModule,
     MatTreeModule,
     PortalModule,
-    ScrollingModule
+    ScrollingModule,
+    AnimateOnScrollModule.forRoot(),
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      unitsColor:"white",
+      subtitleColor:"white",
+      titleColor:"white",
+      showTitle:true,
+      showSubtitle:true,
+      subtitleFontSize:"20px",
+      subtitle:"skillsubtitle",
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
